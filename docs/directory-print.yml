@@ -13,6 +13,6 @@ shell:
         ----
         C:\Users\tendouarisu
   bash:
-    - cmd: "ls"
+    - cmd: "pwd"
       output: |
         /home/tendouarisu
