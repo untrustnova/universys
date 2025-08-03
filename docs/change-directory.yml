@@ -1,0 +1,34 @@
+title: Change Directory
+desc: "The cd command (or Set-Location in PowerShell) is a fundamental command used across various shells like CMD, PowerShell, Bash, and Zsh to change the current working directory. It allows you to navigate between folders within your file system."
+shell:
+  command_prompt:
+    - cmd: "cd \"test 1\""
+      output: ""
+      dir: "C:\\Users\\tendouarisu\\test 1"
+    - cmd: "cd .."
+      output: ""
+      dir: "C:\\Users\\"
+  powershell:
+    - cmd: "cd \"test 1\""
+      output: ""
+      dir: "C:\\Users\\tendouarisu\\test 1"
+    - cmd: "Set-Location \"test 1\""
+      output: ""
+      dir: "C:\\Users\\tendouarisu\\test 1"
+    - cmd: "cd .."
+      output: ""
+      dir: "C:\\Users\\"
+  bash:
+    - cmd: "cd \"test 1\""
+      output: ""
+      dir: "~/test 1"
+    - cmd: "cd .."
+      output: ""
+      dir: "/home"
+  zsh:
+    - cmd: "cd \"test 1\""
+      output: ""
+      dir: "~/test 1"
+    - cmd: "cd .."
+      output: ""
+      dir: "/home"

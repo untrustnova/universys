@@ -1,0 +1,24 @@
+title: Make Directory / Create New Directory
+desc: "This command is used to create a new directory or folder. This is a basic way to organize your file system structure on the command line."
+shell:
+  command_prompt:
+    - cmd: "mkdir test"
+      output: ""
+  powershell:
+    - cmd: "New-Item -Path \"C:\\Users\\tendouarisu\\test\" -ItemType Directory"
+      output: |
+          Directory: C:\
+
+          Mode                 LastWriteTime         Length Name
+          ----                 -------------         ------ ----
+          d-----          8/2/2025   9:55 PM                test
+    - cmd: "mkdir test"
+      output: |
+          Directory: C:\
+
+          Mode                 LastWriteTime         Length Name
+          ----                 -------------         ------ ----
+          d-----          8/2/2025   9:55 PM                test
+  bash:
+    - cmd: "mkdir test"
+      output: ""

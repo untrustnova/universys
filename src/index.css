@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-jetbrain: "JetBrains Mono", monospace;
+  --font-pixelify: "Pixelify Sans", sans-serif;
+  --font-doto: "Doto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+.pixel-corners {
+  --size: 4px;
+  clip-path: polygon(var(--size)0,calc(100% - var(--size))0,calc(100% - var(--size))var(--size),100% var(--size),100% calc(100% - var(--size)),calc(100% - var(--size))calc(100% - var(--size)),calc(100% - var(--size))100%,var(--size)100%,var(--size)calc(100% - var(--size)),0 calc(100% - var(--size)),0 var(--size),var(--size)var(--size));
+}
+.bgimage-noise-state {
+  background-image: url(/universys/noise.png);
+  background-size: 90px 90px;
+}
+.bgimage-noise-medium {
+  background-image: url(/universys/noise.png);
+  background-size: 160px 160px;
+}
+.bgimage-noise-large {
+  background-image: url(/universys/noise.png);
+  background-size: 240px 240px;
+}
+.masking-gradation {
+  mask: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25), transparent);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+body, html {
+  font-family: "Inter", sans-serif;
+}

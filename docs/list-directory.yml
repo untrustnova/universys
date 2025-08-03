@@ -1,0 +1,53 @@
+title: List Directory
+desc: "This command is used to display a list of files and subdirectories within a specified directory. It's fundamental for navigating and understanding the contents of your file system across different operating systems."
+shell:
+  command_prompt:
+    - cmd: "dir"
+      relate:
+        - https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dir
+        - https://gist.github.com/CMCDragonkai/657e940bc3802047ea7b314e80d65d15
+      output: |
+        Volume in drive C is New Volume
+        Volume Serial Number is SSDADATALEGEND
+
+        Directory of C:\Users\tendouarisu
+
+        02/08/2025  21:54      <DIR>           .
+        02/08/2025  21:54      <DIR>           test 1
+        02/08/2025  21:54      <DIR>           test 2
+        02/08/2025  21:54      <DIR>           test 3
+  powershell:
+    - cmd: "ls"
+      output: |
+        Directory: C:\Users\tendouarisu
+
+        Mode                 LastWriteTime         Length Name
+        ----                 -------------         ------ ----
+        d-----          8/2/2025  9:54 PM                 test 1
+        d-----          8/2/2025  9:54 PM                 test 2
+        d-----          8/2/2025  9:54 PM                 test 3
+  bash:
+    - cmd: "ls"
+      relate:
+        - https://www.w3schools.com/bash/bash_ls.php
+        - https://man7.org/linux/man-pages/man1/ls.1.html
+      output: |
+        test 1
+        test 2
+        test 3
+    - cmd: "ls -l"
+      output: |
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 1
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 2
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 3
+  zsh:
+    - cmd: "ls"
+      output: |
+        test 1
+        test 2
+        test 3
+    - cmd: "ls -l"
+      output: |
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 1
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 2
+        drwxr-xr-x 2 user user 4096 Aug  2 21:54 test 3

@@ -1,0 +1,18 @@
+title: Print Working Directory
+desc: "This command is used to display the location of the current working directory. This is very important to know where you are in the file system structure when working on the command line."
+shell:
+  command_prompt:
+    - cmd: "echo %cd%"
+      output: |
+        C:\Users\tendouarisu
+
+  powershell:
+    - cmd: "pwd"
+      output: |
+        Path
+        ----
+        C:\Users\tendouarisu
+  bash:
+    - cmd: "ls"
+      output: |
+        /home/tendouarisu
