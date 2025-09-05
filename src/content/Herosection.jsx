@@ -2,12 +2,12 @@ export default function Herosection({ searchText, setSearchText }) {
   return <div className="relative w-full h-[420px] flex items-center">
     <img
       className="w-full h-full object-cover"
-      src="/universys/arisu-yuzu-wp.jpg"
+      src="./arisu-yuzu-wp.jpg"
     />
     <div className="absolute w-full h-full flex items-center justify-center bgimage-noise-medium backdrop-blur-[2.5px] bg-black/40 px-4">
       <div className="w-full max-w-2xs absolute flex justify-end mt-[-95px]">
         <img
-          src="/universys/arisu.webp"
+          src="./arisu.webp"
           className="w-[75px]"
         />
       </div>

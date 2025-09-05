@@ -1,22 +1,19 @@
-# Tahap build
+# Building Vite Dist
 FROM node:24-alpine AS builder
 
 WORKDIR /app
-ARG APP_VERSION="0.2.0"
+ARG APP_VERSION="0.2.1"
 
 COPY package.json yarn.lock ./
-
 RUN npm install --force
 COPY . .
-RUN npm run build
+RUN npm run build --buildfordocker
 
-FROM node:24-alpine
+# Final Stage
+FROM nginx:stable-alpine AS production
 
-WORKDIR /app
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-EXPOSE 4173
-CMD ["yarn", "preview", "--host", "0.0.0.0", "--port", "4173"]
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

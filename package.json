@@ -1,12 +1,13 @@
 {
   "name": "universys",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.2.1",
   "type": "module",
   "homepage": "https://untrustnova.github.io/universys",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node ./create-docs",
+    "gitbuild": "vite build --basehomepages && node ./create-docs",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"

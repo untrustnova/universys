@@ -3,7 +3,13 @@ import { ChevronUp } from "@nsmr/pixelart-react"
 
 export default function StickyBottomSearch({ scrollTop = 0, searchText, setSearchText }) {
   return <>
-    <div className="w-full sticky left-0 duration-100 flex justify-center items-center px-3.5 py-2.5" style={{ bottom: calculatePercentageOrPosition(scrollTop, 200, 260, -60, 0)+"px" }}>
+    <div
+      className="w-full sticky left-0 duration-100 flex justify-center items-center px-3.5 py-5"
+      style={{
+        bottom: calculatePercentageOrPosition(scrollTop, 90, 210, -60, 0)+"px",
+        scale: calculatePercentageOrPosition(scrollTop, 90, 210, 0.9, 1),
+      }}
+    >
       <input
         name="search-q"
         id="search-q"
