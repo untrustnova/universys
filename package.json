@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node ./create-docs",
-    "gitbuild": "vite build --basehomepages && node ./create-docs",
+    "gitbuild": "vite build --base=/universys/ && node ./create-docs",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "vite preview"
   },
   "dependencies": {
     "@nsmr/pixelart-react": "^2.0.0",

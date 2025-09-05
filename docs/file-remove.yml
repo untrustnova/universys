@@ -1,0 +1,17 @@
+title: Remove Directory
+desc: ""
+shell:
+  command_prompt:
+    - cmd: "rd test"
+      output: ""
+  powershell:
+    - cmd: "rd test"
+      output: ""
+    - cmd: "rm test"
+      output: ""
+  bash:
+    - cmd: "rm test"
+      output: ""
+  zsh:
+    - cmd: "rm test"
+      output: ""

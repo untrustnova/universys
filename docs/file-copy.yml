@@ -1,0 +1,15 @@
+title: Remove Directory
+desc: ""
+shell:
+  command_prompt:
+    - cmd: "copy test"
+      output: ""
+  powershell:
+    - cmd: "cp test"
+      output: ""
+  bash:
+    - cmd: "cp test"
+      output: ""
+  zsh:
+    - cmd: "cp test"
+      output: ""

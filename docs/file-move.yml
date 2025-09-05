@@ -1,0 +1,21 @@
+title: Move File
+desc: "Commands to move or rename files and directories."
+shell:
+  command_prompt:
+    - cmd: "ren test"
+      output: ""
+    - cmd: "rename test"
+      output: ""
+    - cmd: "move test"
+      output: ""
+  powershell:
+    - cmd: "ren test"
+      output: ""
+    - cmd: "mv test"
+      output: ""
+  bash:
+    - cmd: "mv test"
+      output: ""
+  zsh:
+    - cmd: "mv test"
+      output: ""
