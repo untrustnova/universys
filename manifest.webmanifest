@@ -1,0 +1,41 @@
+{
+  "name": "Universys",
+  "short_name": "Universys",
+  "description": "Universys or universal system command is a documentation site for all existing commands on operating systems",
+  "start_url": "/?start=pwa-app",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/16-icon.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/32-icon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/64-icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/128-icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/256-icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/512-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
